@@ -1,0 +1,19 @@
+1 : jaded
+2 : adapt to the team / doesn't value his work
+3 : spent the entire day with a snake on his shoe
+4 : highschool in Litterature / paramedic / ireland (woofing) / master on LoL
+5 : no experience in IT except C+
+6 : It doesn't ring any bell
+7 : Ambition ? Get the title into a IT companies to improve his skills and go freelance
+
+
+	Hello everyone. Today I'd like you to meet Rémy, our everlasting jaded member. Despite that he's always
+ready to adapt to the team even so he doesn't really value his work. 
+	About Rémy. Former baker and ambulance driver, he spent 4 months in Ireland and 1 day with a snake in his shoe as a woofer before returning
+to France to undertake a skills assessment. That's why he's here with us today, but without a snake in his shoe this time. For him, English
+doesn't ring any bell but he's determinate to get the title. With it, he'll join some IT companies to gain experience and improve his skills.
+After that, he wish to go freelance.
+
+
+
+
