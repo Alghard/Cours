@@ -292,17 +292,24 @@ console.log(n);
 // 34
 // 55
 console.log("Exercice 18");
-let total = 0;
-let temp = 1;
-for(let i = 0 ; i < 10 ; i++){
-    console.log(total);
-    total = total + temp;
-
+let lastValue = 1;
+let previousValue = 0;
+for(let i = 0 ; i < 10 ; i++) {
+    console.log(lastValue);
+    let temp = previousValue;
+    previousValue = lastValue;
+    lastValue += temp;
 }
 
 // Exercice 19 : compter combien il y a de nombres multiples de 3 ou de 7 entre 1234 et 5678
 console.log("Exercice 19");
-// TODO
+let count19 = 0;
+for(let number = 1234 ; number < 5678 ; number++) {
+    if(number%3 == 0 || number%7 == 0) {
+        count19++;
+    }
+}
+console.log(count19);
 
 // Exercice 20 : afficher dans la console :
 /*
