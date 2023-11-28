@@ -78,7 +78,7 @@ function f8a(x,y,z){
     if (x > y && x > z){
         return x;
     }
-    else if (y > x && y > z){
+    else if (y > z){
         return y;
     }
     else{
@@ -103,12 +103,12 @@ console.log(f8b(546,778,1112));
 function f9(nb,txt){
     let i = 0;
     if (nb < i){
-        console.log("Erreur, veuillez rentrer un nombre > 0")
+        console.warn("Erreur, veuillez rentrer un nombre > 0");
     }
     else {
-        for ( i ; i < nb ; i++){
-        console.log(txt);
+        for (; i < nb ; i++){
+            console.log(txt);
         }
     }
 }
-f9(58,"RIP BOZO REST IN PISS");
+f9(-8,"RIP BOZO REST IN PISS");
