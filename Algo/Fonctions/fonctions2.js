@@ -9,7 +9,7 @@ function syracuse(n){
         result = n/2;
     }
     else {
-        result = n*3+1;
+        result = 3*n + 1;
     }
     return result;
 }
