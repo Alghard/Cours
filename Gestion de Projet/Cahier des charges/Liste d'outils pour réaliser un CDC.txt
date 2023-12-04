@@ -7,6 +7,7 @@ Diagramme de Gant :
 https://www.ganttproject.biz/
 https://elegantt.com/
 https://www.vertex42.com/ExcelTemplates/simple-gantt-chart.html
+https://instagantt.com/
 
 Outils graphique :
 https://www.figma.com/
