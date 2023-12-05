@@ -1,5 +1,5 @@
 //Initialisation du niveau
-setPos(300,300);
+setPos(20,300);
 changeColor(color.red);
 setLineWidth(1);
 
@@ -583,9 +583,25 @@ for(let x = 0 ; x < 10; x++){
 
 */
 
+/*
 for(let i = 0; i < 2000; i ++){
     forward(Math.random()*20);
     right(Math.random()*360);
     shiftColor(0.01);
 
+}
+*/
+
+let msg = "NNEESOOESEENNEEOOSEOSEEENNESENSSENNEESSOOEEENNEEOOSEOSEEENEENOOEESOOSEEEEEEENONSESENNSSENNEESSOOEEENNSSEENNSSEEENOONEEOOSEESEEEENNEESSOOEEENNEESOOEESENNESENSSEEENOONEEOOSEESEEEENNSSEEENNEESOOEESEEEENNEEOOSEOSEEENNEESSOOEEENNEESOOESEENNEEOOSEOSEEEENNOEEOSSEEEEENNEESOOEESOOEEENNEESOOESEENNSSEENNSSENNESNESSENNEEOOSEOSEEENNSSEENNSSEEENOONEEOOSEESENNEEOOSEOSEEEEEENNEESSOOEEENNEEOOSEOSEEENNESNESSENNEESOOEESENNSSENNESENSS";
+for (let i = 0; i < msg.length ; i++){
+    if (msg[i] == "N"){
+      faceUp();
+    }else if (msg[i] == "S"){
+        faceDown();
+    }else if (msg[i] == "E"){
+        faceRight();
+    }else {
+        faceLeft();
+    }
+    forward(7);
 }
