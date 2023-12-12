@@ -1,0 +1,40 @@
+.dice {
+  border: 2px red solid;
+  border-radius: 25px;
+  background-color: lightgray;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border: 1px red solid;
+  background-color: red;
+  border-radius: 10px;
+}
+.d4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 3em;
+}
+.d5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 2.5em;
+}
+.d6 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 1.5em;
+}
