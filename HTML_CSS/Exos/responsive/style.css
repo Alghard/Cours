@@ -1,0 +1,41 @@
+div{
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+}
+img{
+    height: 200px;
+    width: 400px;
+}
+p{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+@media only screen and (max-device-width:600px){
+    body{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+}
+@media only screen and (min-device-width:1000px){
+    body{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+@media only screen and (min-device-width:600px) and (max-device-width:1000px){
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    p{
+        order: 1;
+    }
+    img{
+        order: 3;
+    }
+}
