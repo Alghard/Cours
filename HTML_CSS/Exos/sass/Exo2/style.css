@@ -1,0 +1,39 @@
+/*
+li:nth-child(even) {
+    color: red;
+  }
+  ul:hover li:nth-child(odd) {
+    color: red;
+  }
+  ul:hover li:nth-child(even) {
+    color: black;
+  }
+*/
+body {
+  background-color: blanchedalmond;
+}
+body ul {
+  width: 200px;
+  height: 200px;
+}
+body ul li {
+  font-size: larger;
+  border: solid gray 2px;
+  border-radius: 5px;
+}
+body ul li:nth-child(odd) {
+  color: black;
+  background-color: rgb(111, 111, 195);
+}
+body ul li:nth-child(even) {
+  color: rgb(111, 111, 195);
+  background-color: black;
+}
+body ul:hover li:nth-child(odd) {
+  color: rgb(111, 111, 195);
+  background-color: black;
+}
+body ul:hover li:nth-child(even) {
+  color: black;
+  background-color: rgb(111, 111, 195);
+}/*# sourceMappingURL=style.css.map */

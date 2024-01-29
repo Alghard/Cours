@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Création de Personnage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <h2>Formulaire de Création de Personnage</h2>
+
+      <form action="/submit_character" method="post">
+        <label for="nom">Nom:</label><br />
+        <input type="text" id="nom" name="nom" /><br />
+
+        <label for="prenom">Prénom:</label><br />
+        <input type="text" id="prenom" name="prenom" /><br />
+
+        <label for="age">Âge:</label><br />
+        <input type="number" id="age" name="age" /><br />
+
+        <label for="sexe">Sexe:</label><br />
+        <select id="sexe" name="sexe">
+          <option value="homme">Homme</option>
+          <option value="femme">Femme</option></select
+        ><br />
+
+        <label for="classe">Classe:</label><br />
+        <select id="classe" name="classe">
+          <option value="guerrier">Guerrier</option>
+          <option value="voleur">Voleur</option>
+          <option value="prêtre">Prêtre</option>
+          <option value="magicien">Magicien</option></select
+        ><br />
+
+        <label for="arme_principale">Arme Principale:</label><br />
+        <select id="classe" name="classe">
+          <option value="guerrier">Greatsword</option>
+          <option value="voleur">Bow</option>
+          <option value="prêtre">Hunting Horn</option>
+          <option value="magicien">SnS</option></select
+        ><br />
+
+        <label for="arme_secondaire">Arme Secondaire:</label><br />
+        <select id="classe" name="classe">
+          <option value="guerrier">Hunting Knife</option>
+          <option value="voleur">Light Bow Gun</option>
+          <option value="prêtre">Pencil</option>
+          <option value="magicien">Cutter</option></select
+        ><br />
+
+        <label for="avatar">Avatar :</label><br />
+        <select id="avatar" name="avatar" required>
+          <option value="avatar1">Avatar 1</option>
+          <option value="avatar2">Avatar 2</option>
+          <option value="avatar3">Avatar 3</option></select
+        ><br />
+        <input type="submit" value="Valider" />
+      </form>
+    </div>
+  </body>
+</html>
