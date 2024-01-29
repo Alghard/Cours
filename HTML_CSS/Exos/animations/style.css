@@ -1,9 +1,0 @@
-img:hover {
-  transform: scale(2);
-}
-img:active {
-  transform: rotate(180deg);
-}
-img {
-  margin: 20vh;
-}
