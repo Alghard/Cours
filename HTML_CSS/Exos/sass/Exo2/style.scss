@@ -1,0 +1,43 @@
+/*
+li:nth-child(even) {
+    color: red;
+  }
+  ul:hover li:nth-child(odd) {
+    color: red;
+  }
+  ul:hover li:nth-child(even) {
+    color: black;
+  }
+*/
+$c1: black;
+$c2: rgb(111, 111, 195);
+body{
+    background-color: blanchedalmond;
+    ul{
+        width: 200px;
+        height: 200px;
+        li{
+            font-size: larger;
+            border: solid gray 2px;
+            border-radius: 5px;
+            &:nth-child(odd){
+                color: $c1;
+                background-color: $c2;
+            }
+            &:nth-child(even){
+                color: $c2;
+                background-color: $c1;
+            }
+        }
+        &:hover{
+            li:nth-child(odd){
+                color:$c2;
+                background-color: $c1;
+            }
+            li:nth-child(even){
+                color:$c1;
+                background-color: $c2;
+            }
+        }
+    }
+}

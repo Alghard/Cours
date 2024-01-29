@@ -1,0 +1,39 @@
+#container {
+  border: solid black 2px;
+}
+#container div:first-child {
+  background-color: blue;
+  width: 8em;
+  height: 7em;
+  position: relative;
+  left: 6em;
+  z-index: 5;
+  top: -20px;
+}
+#container div:nth-child(2) {
+  background-color: green;
+  width: 9em;
+  height: 5em;
+  z-index: 4;
+  position: relative;
+  top: -9.4em;
+}
+#container div:nth-child(3) {
+  background-color: red;
+  width: 7em;
+  height: 9em;
+  position: relative;
+  left: 3em;
+  top: -200px;
+  z-index: 6;
+}
+#container div:last-child {
+  background-color: pink;
+  width: 5em;
+  position: relative;
+  top: -339px;
+  z-index: 3;
+}
+.box {
+  opacity: 50%;
+}

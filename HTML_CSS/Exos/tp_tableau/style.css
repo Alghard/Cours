@@ -1,0 +1,27 @@
+th {
+  background-color: #87cefa;
+}
+caption {
+  color: blueviolet;
+  text-align: center;
+}
+th,
+td {
+  border: solid black 2px;
+  text-align: center;
+}
+table {
+  border: thick double blueviolet;
+  border-collapse: collapse;
+}
+td {
+  border-collapse: collapse;
+}
+#t2 {
+  border: solid black 2px;
+  text-align: center;
+}
+#c2 {
+  color: green;
+  text-align: center;
+}

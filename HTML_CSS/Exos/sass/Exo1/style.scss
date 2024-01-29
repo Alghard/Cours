@@ -1,0 +1,70 @@
+$b1: solid rgb(117, 43, 43) 1px;
+$br1: 5px;
+$mg1: 15px 15px 0px 15px;
+$color: #F082AC;
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-auto-flow: column;
+    place-content: center;
+    background: #fffaf2;
+    .card {
+        border: $b1;
+        border-radius: $br1;
+        height: 600px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        background-color: rgb(255, 236, 210);
+        align-items: center;
+        h2{
+            text-align: center;
+            text-decoration: underline;
+            color: #4c9bea;
+            margin-bottom: 0px;
+        }
+        button{
+            background-color: #EA4C89;
+            border-radius: 8px;
+            border-style: none;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 500;
+            height: 40px;
+            line-height: 20px;
+            list-style: none;
+            margin: 0;
+            outline: none;
+            padding: 10px 16px;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            transition: color 100ms;
+            vertical-align: baseline;
+            touch-action: manipulation;
+            &:hover{
+                background-color: $color;
+            }
+            &:focus{
+                background-color: $color;
+            }
+        }
+        p{
+            margin-bottom: 40px;
+        }
+        img{
+            border-radius: 10px 100px / 120px;
+            border: $b1;
+            margin: $mg1 ;
+            height: 300px;
+            width: 300px;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}

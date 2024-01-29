@@ -1,0 +1,27 @@
+1 : b Vert
+2 : b Vert
+3 : a Vert
+4 : c Vert
+5 : c Vert
+6 : a Vert
+7 : b Vert
+8 : d Bleu
+9 : c Jaune
+10 : b Vert
+11 : c Vert
+12 : a Bleu
+13 : a Vert
+14 : c Jaune
+15 : c Vert
+16 : b Rouge
+17 : c Rouge
+18 : b Vert
+19 : d Vert
+20 : b Jaune
+21 : b Vert
+22 : d Jaune
+23 : c Vert
+24 : a Vert
+25 : b Rouge
+
+Total : 16 vert ---- 4 jaune ---- 2 bleu ---- 3 rouge
