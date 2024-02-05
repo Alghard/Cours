@@ -1,4 +1,27 @@
+body {
+    height: 5000px;
+}
 h1.laClasse {
     color: chartreuse;
     font-style: oblique;
+}
+.inputFocus {
+    background-color: rgb(138, 138, 210);
+    color: white;
+}
+#mouseOut {
+    display: none;
+}
+.boxBar {
+    width: 100%;
+    border: 5px solid blueviolet;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.bar {
+    height: 21px;
+    background: turquoise;
+    width: 0%;
 }
