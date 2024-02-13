@@ -51,16 +51,16 @@ inputTxt.addEventListener("blur", () => {
 //     uneImage.addEventListener("load", () => console.log(`Image numéro ${index} vient de finir de charger.`));
 // });
 
-// const h2Out = document.querySelector("#mouseOut");
-// document.body.addEventListener("mouseleave", () => {
-//     h2Out.style.display = "block";
-//     h2Out.style.backgroundColor = "green";
-//     h2Out.style.color = "red";
-// });
+const h2Out = document.querySelector("#mouseOut");
+document.body.addEventListener("mouseleave", () => {
+    h2Out.style.display = "block";
+    h2Out.style.backgroundColor = "green";
+    h2Out.style.color = "red";
+});
 
-// document.body.addEventListener("mouseenter", () => {
-//     h2Out.style.display = "none";
-// });
+document.body.addEventListener("mouseenter", () => {
+    h2Out.style.display = "none";
+});
 
 // TODO Réagir au scroll
 
