@@ -56,10 +56,20 @@ function readUserData() {
             let editIconUI = document.createElement("button");
             editIconUI.innerText = "Update";
             editIconUI.setAttribute("class", "btn btn-outline-primary mx-3");
+            //*Phase 5 on fait les icones pour UPDATE
+            let deleteIconUI = document.createElement("button");
+            deleteIconUI.innerText = "Delete";
+            deleteIconUI.setAttribute("class", "btn btn-outline-danger mx-3");
+            //* Sur les icone en face du nom du user on rajoute un attribut qui contient la key
+            //* on veut savoir qui on supprime au click
+            deleteIconUI.setAttribute("userid", key);
+            deleteIconUI.addEventListener("click", deleteButtonClicked);
+            //* Sur les icone en face du nom du user on rajoute un attribut qui contient la key
             editIconUI.setAttribute("userid", key);
             editIconUI.addEventListener("click", editButtonClicked);
             $li.innerText = value.name;
             $li.append(editIconUI);
+            $li.append(deleteIconUI);
             $li.setAttribute("user-key", key);
             $li.setAttribute("class", "list-group-item d-flex justify-content-between align-items-center");
             //* À la lecture de chaque utilisateur on le rend clickable pour afficher les détails
@@ -133,4 +143,8 @@ function saveUserBtnClicked() {
     formUserEditUI.style.display = "none";
     formUserUI.style.display = "block";
 }
-function deleteButtonClicked(event) {}
+function deleteButtonClicked(event) {
+    let userID = event.target.getAttribute("userID");
+    const userRef = dbRef.child("users/" + userID);
+    userRef.remove();
+}
