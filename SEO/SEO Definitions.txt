@@ -1,0 +1,15 @@
+SEO : "Search Engine Optimization" Optimisation pour les moteurs de recherche ! C'est l'ensemble des techniques pour ameliorer 
+	la position de l'ensemble d'un site web sur les moteurs de recherche
+
+SMO : "Social Media Optimization" Référencement social ! c'est le SEO via la réseau sociaux (community manager ?)
+
+SEA : "Search Engine Advertizing" Référencement payant ou tous les liens mis en avant sur les moteurs de recherche
+	généralement au dessus ou sur les coté
+
+Référencement : Sur internet => Action d'inscrire un site sur un moteur de recherche
+
+SERP : Search Engine Result Page => soit le résultat d'un moteur de recherche suite à la saisie
+	d'une requête dans le formulaire de recherche.
+
+Référencement local : Référencement géolocalisé pour avoir des suggestions au plus proches 
+	de l'internaute.

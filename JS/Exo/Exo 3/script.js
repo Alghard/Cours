@@ -52,7 +52,7 @@ inputTxt.addEventListener("blur", () => {
 // });
 
 const h2Out = document.querySelector("#mouseOut");
-document.body.addEventListener("mouseleave", () => {
+document.body.addEventListener("mouseleave", "click", () => {
     h2Out.style.display = "block";
     h2Out.style.backgroundColor = "green";
     h2Out.style.color = "red";
@@ -130,12 +130,12 @@ document.addEventListener("scroll", () => {
 // TODO 3-2: Puis on console log event
 // TODO 3-3 : sur monForm on utilise la fonction .reset()
 
-// let monForm = document.querySelector("form");
-// monForm.addEventListener("submit", (event) => {
-//     event.preventDefault();
-//     console.log(event);
-//     monForm.reset();
-// });
+let monForm = document.querySelector("form");
+monForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    console.log(event);
+    monForm.reset();
+});
 
 // let steal = document.querySelector("#formRender");
 // document.addEventListener("keyup", function (event) {
