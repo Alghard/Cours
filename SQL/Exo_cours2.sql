@@ -1,0 +1,33 @@
+use test;
+CREATE TABLE `fdps` (
+    id_fdps INT,
+    level_fdps BIGINT
+)  ENGINE=INNODB;
+
+-- MODIFIER LA STRUCTURE D UNE TABLE => ALTER TABLE
+-- AJOUTER UNE CLE PRIMAIRE
+ALTER TABLE fdps ADD PRIMARY KEY (id_fdps);
+
+-- MODIFIER LES PROPRIETES D UNE COLONNE 
+ALTER TABLE fdps MODIFY COLUMN id_fdps INT AUTO_INCREMENT NOT NULL;
+
+-- MODIFIER LE NOM D UNE COLONNE
+ALTER TABLE fdps CHANGE level_fdps rank_fdps BIGINT;
+
+-- AJOUTER UNE COLONNE
+Alter table fdps add column age_fdps Bigint;
+Alter table fdps add column id_user Bigint;
+
+alter table fdps modify column id_user INT;
+
+-- AJOUTER UNE CLE ETRANGERE
+ALTER TABLE fdps ADD CONSTRAINT FOREIGN KEY (id_user) REFERENCES users (idUser);
+
+-- SUPPRIMER UNE COLONNE 
+ALTER TABLE fdps DROP age_fdps;
+
+-- SUPPRESSION D UNE CONTRAINTE
+ALTER TABLE fdps DROP CONSTRAINT fdps_ibfk_1;
+
+-- AJOUTER UNE CLE ETRANGERE EN LUI CHOISSISSANT UN NOM
+ALTER TABLE articles ADD CONSTRAINT ma_cle_article_user FOREIGN KEY (id_user) REFERENCES users(id_user);
