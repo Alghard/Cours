@@ -150,12 +150,39 @@ ALTER TABLE achat ADD CONSTRAINT FOREIGN KEY (id_personnage) REFERENCES personna
 INSERT INTO achat (date_achat, id_joueurs,id_costume,id_personnage)
 	VALUE ("2022-05-10",1,1,1),("2022-06-01",1,2,7),("2022-06-21",3,4,3),("2022-06-21",1,3,1),("2022-06-23",3,5,3),("2022-07-03",5,1,5);
     
-    
+-- 1) Toute la liste des joueurs inscrit -> Afficher la liste des joueurs (uniquement leur pseudo)    
 SELECT pseudo_joueur FROM joueur;
+
+-- 2) Page profil d'un joueur -> Afficher le pseudo et le mail du troisième joueur inscrit
 SELECT pseudo_joueur, mail_joueur FROM joueur WHERE id_joueurs = 3;
 
+-- 3) Liste des personnages -> Afficher le pseudo du premier joueur et sa liste de personnage
+SELECT 
+    joueur.pseudo_joueur, personnage.nom_personnage
+FROM
+    joueur
+        INNER JOIN
+    personnage ON joueur.id_joueurs = personnage.id_joueurs
+WHERE
+    joueur.id_joueurs = 1;
 
-
+-- 4) Liste des costumes -> Afficher le pseudo du premier joueur et la liste des costumes achetés pour chacun de ses personnages (afficher aussi les personnages du coup)
+SELECT 
+    joueur.pseudo_joueur,
+    costume.nom_costume,
+    personnage.nom_personnage
+FROM
+    achat
+        JOIN
+    personnage ON achat.id_personnage = personnage.id_personnage
+        JOIN
+    joueur ON achat.id_joueurs = joueur.id_joueurs
+        JOIN
+    costume ON costume.id_costume = achat.id_costume
+WHERE
+    joueur.id_joueurs = 1;
+    
+-- 5) Afficher le montant total dépensé par chaque joueur, classé par ordre décroissant (vous utiliserez la fonction d’agrégation sum() )
 
 
 
