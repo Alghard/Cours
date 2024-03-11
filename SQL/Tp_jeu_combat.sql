@@ -220,3 +220,52 @@ WHERE
             carnet_amis ON joueurs.Id_carnet_amis = carnet_amis.Id_carnet_amis
         WHERE
             joueurs.Id_joueurs = 3);
+            
+-- 7) Messagerie -> Afficher le pseudo du troisième joueur, la liste des messages qu’il a envoyés, puis afficher la liste des messages qu’il a reçus
+
+SELECT DISTINCTROW
+    (SELECT 
+            joueurs.pseudo_joueur
+        FROM
+            joueurs
+        WHERE
+            joueurs.Id_joueurs = 3) AS 'Joueur 3',
+    messages.message AS 'Messages envoyés'
+FROM
+    messages
+        JOIN
+    joueurs ON joueurs.Id_joueurs = messages.id_auteur
+WHERE
+    joueurs.Id_joueurs = 3;
+SELECT DISTINCTROW
+    (SELECT 
+            joueurs.pseudo_joueur
+        FROM
+            joueurs
+        WHERE
+            joueurs.Id_joueurs = 3) AS 'Joueur 3',
+    messages.message AS 'Messages Reçus'
+FROM
+    messages
+        JOIN
+    joueurs ON joueurs.Id_joueurs = messages.id_destinataire
+WHERE
+    joueurs.Id_joueurs = 3;
+        
+-- 8) Afficher le journal de combat du premier joueur. On doit voir apparaître la date de chaque combat, le nom de l’arène, le nom du vainqueur et le nom du vaincu
+
+/*SELECT DISTINCTROW
+    (SELECT 
+            joueurs.pseudo_joueur
+        FROM
+            joueurs
+        WHERE
+            joueurs.Id_joueurs = 1) AS 'Joueur 1', combats.date_combat AS 'Date du combat', arene.nom_arene AS 'Nom arène', personnage.nom_personnage AS 'Vainqueur', personnage.nom_personnage AS 'Vaincu'
+	FROM combats
+    JOIN arene ON combats.Id_arene = arene.Id_arene
+    JOIN personnage ON combats.id_vaincu = personnage.Id_personnage OR combats.id_vainqueur = personnage.Id_personnage
+    WHERE personnage.Id_joueurs = 1;
+*/
+
+-- 9) Stat des personnages -> Afficher les caractéristiques des personnages du premier joueur. Chaque caractéristique (Point de vie, Attaque, Defense) doit apparaitre ajustée par l'item équipé (Point de vie = Point de vie du type de perso + Bonus de Point de vie de l'item). Afficher aussi l'item équipé par ces personnages.
+-- 10) Le premier joueur n'a plus envie de joueur son premier personnage, et décide de le supprimer. Le supprimer de la Base de Donnée.
