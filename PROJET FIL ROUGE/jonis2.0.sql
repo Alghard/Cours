@@ -1,4 +1,3 @@
-
 CREATE TABLE Animal(
    id_animal VARCHAR(50) ,
    nom_animal VARCHAR(50) ,
