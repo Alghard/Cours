@@ -83,11 +83,12 @@ CREATE TABLE Utilisateur(
 );
 
 CREATE TABLE Article(
-   id_article BIGINT,
+   id_article BIGINT AUTO_INCREMENT NOT NULL PRIMARY KEY,
    nom_article VARCHAR(50) ,
-   prix_unit_article DECIMAL(19,4),
-   description_article VARCHAR(50) ,
-   img_article VARCHAR(50) ,
+   prix_unit_article DECIMAL(19,2),
+   prix_kg_article DECIMAL (19,2),
+   description_article TEXT,
+   img_article VARCHAR(511),
    id_type INT,
    id_animal VARCHAR(50) ,
    PRIMARY KEY(id_article),
